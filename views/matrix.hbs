@@ -1,0 +1,50 @@
+<div id="app">
+    <form method="post" @submit="onSubmit" action="matrix">
+        <h1>Matrix Calculator</h1>
+        <v-text-field
+            v-model="number1"
+            :rules="[rule]"
+            label="Number 1"
+            name="number1"
+            type="number"
+        ></v-text-field>
+        <v-text-field
+            v-model="number2"
+            :rules="[rule]"
+            label="Number 2"
+            name="number2"
+        ></v-text-field>
+        <v-btn type="sumbit">=</v-btn>
+    </form>
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        mounted () {
+            console.log('mounted')
+        },
+        data () {
+            return {
+                number1: 0,
+                number2: 0
+            }
+        },
+        methods : {
+            rule (value) {
+                if (!isNaN(Number(value))) {
+                    return true
+                } else {
+                    return 'Field Must be a number'
+                }
+            },
+            onSubmit (ev) {
+                let valid = this.rule(this.number1) === true && this.rule(this.number2) === true;
+                console.log(valid)
+                if (!valid) {
+                    ev.preventDefault()
+                } 
+                return valid
+            }
+        }
+    })
+</script>

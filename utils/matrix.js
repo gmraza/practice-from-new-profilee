@@ -1,0 +1,2 @@
+// For Matrix First i've creeate an array with lenth of num 2 and dill it with num one on all indexes and then reduse Multiply it
+module.exports = (num1, num2) => new Array(num2).fill(num1).reduce((previous, current) => previous*current, num1)

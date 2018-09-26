@@ -1,0 +1,28 @@
+<div id="app">
+    <v-list>
+        <v-list-tile v-for="(todo, index) in todos" :key="todo.id" @click="onClick(todo.id)">
+            <v-list-tile-content>
+                <v-list-tile-title v-html="todo.title"></v-list-tile-title>
+                <v-list-tile-sub-title v-html="'Completed: ' + todo.completed"></v-list-tile-sub-title>
+            </v-list-tile-content>
+        </v-list-tile>
+    </v-list>
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        mounted() {
+            console.log('mounted', this.todos)
+        },
+        data() {
+            return {
+                todos: {{{ todo }}}
+            }
+        },
+        methods : {
+            onClick (id) {
+                //window.location.href = `/users/${id}/todos`
+            }
+        }
+    })
+</script>

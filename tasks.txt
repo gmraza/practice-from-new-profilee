@@ -1,0 +1,98 @@
+===========================================================
+
+Instructions:
+
+Before receiving the test:
+Make sure your computer is setup with all required software, IDE, SDKs, etc. which you require to complete a working solution on the platform of your choice.
+Make sure you have the next 2-3 hours available to stay till you complete your solution
+Evaluation criteria would be:
+Completeness of the solution, i.e. how much is achieved in the code
+Aesthetics of used colors, font sizes, etc.
+UI orientation support adaption for landscape and portrait as well as different device sizes
+Proper use of the language and libraries
+Cleanliness of code
+Appropriate comments in code
+Software design and use of design patterns appropriately
+Unit tests
+Functional tests
+
+===========================================================
+
+Comparison of Sorting Algorithms
+
+Implement two or more (extra credit for each) sorting algorithms. And use them on test data via Factory design pattern. Show information on the screen regarding best, average, and worst case scenarios with respect to time and Big-O notation for each algorithm, and show which one was the best in which case.
+
+===========================================================
+
+Comparison of Searching Algorithm
+
+Implement two or more (extra credit for each) searching algorithms. And use them on test data via Factory design pattern. Show information on the screen regarding best, average, and worst case scenarios with respect to time and Big-O notation for each algorithm, and show which one was the best in which case.
+
+===========================================================
+
+Simple Calculator
+
+Implement a four operation (multiply, divide, add, subtract) calculator with support for brackets and floating point numbers.
+
+===========================================================
+
+Matrix Multiplication
+
+Implement a matrix multiplication app for 2x2, 2x3, and 3x3 matrices utilizing multi-threading
+
+===========================================================
+
+Contacts with Location on Map
+
+Implement an app:
+
+Show list of contacts as master view for contact cards as details and possibility to tap on location to show it on a map.
+
+You can use these JSON APIs:
+https://jsonplaceholder.typicode.com/users
+https://jsonplaceholder.typicode.com/users/1
+
+More details about the API: https://jsonplaceholder.typicode.com
+
+===========================================================
+
+Todo Viewer
+
+Implement an app:
+
+Show list of users as master, and their todo items as detailed view.
+
+You can use these JSON APIs:
+https://jsonplaceholder.typicode.com/users
+https://jsonplaceholder.typicode.com/users/1/todos
+
+More details about the API: https://jsonplaceholder.typicode.com
+
+
+===========================================================
+
+Traveling Salesman
+
+Implement a solution for the following traveling salesman problem:
+The salesman has to visit following five cities for the provided duration of working days, in any order
+Karachi (4 days)
+Lahore (3 days)
+Islamabad (3 days)
+Quetta (2 days)
+Peshawar (5 days)
+Hotel rates in the cities are:
+Karachi Rs. 10,000/-
+Lahore Rs. 9,000/-
+Islamabad Rs. 15,000/-
+Quetta 7,000/-
+Peshawar 8,000/-
+The flights he can take are as under (either way):
+Karachi - Islamabad, Morning and Evening 7 days a week, Rs. 18,000/-
+Karachi - Lahore, Morning and Evening 5 working days a week Rs. 14,000/-
+Lahore - Peshawar, Evening only Tuesday and Thursday, Rs. 12,000/-
+Islamabad - Quetta, Morning only 5 working days, Rs. 10,000/-
+Karachi - Quetta, Evening only Tuesday, Wednesday and Friday, Rs. 11,000/-
+Implement a software which computes a solution to get the salesman to all cities for the required number of working days in the minimum possible of total days and spending minimum amount for traveling and lodging. Assume that morning flights get him to a new city at start of business day and evening flights leave after end of business day. Hotel are charges are per night and charged in the city where they are or reach by evening flight. Flights are on the same time so can not take two evening or morning flights on the same day.
+
+
+===========================================================

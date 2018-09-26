@@ -1,0 +1,44 @@
+<div id="app">
+    <form method="post" @submit="onSubmit" action="calc">
+        <h1>Calculator</h1>
+        <v-text-field
+            v-model="forCalc"
+            :rules="[rule]"
+            label="Your Calculation"
+            name="forCalc"
+            :autofocus="true"
+        ></v-text-field>
+        <v-btn type="sumbit">=</v-btn>
+    </form>
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        mounted () {
+            console.log('mounted')
+        },
+        data () {
+            return {
+                forCalc: {{value}} || 0
+            }
+        },
+        methods : {
+            rule (value) {
+                try {
+                    eval(value)
+                    return true
+                } catch (e) {
+                    return 'Calculation Must contens 1-9,+,-,/,*'
+                }
+            },
+            onSubmit (ev) {
+                let valid = this.rule(this.forCalc) === true;
+                console.log(valid)
+                if (!valid) {
+                    ev.preventDefault()
+                } 
+                return valid
+            }
+        }
+    })
+</script>
